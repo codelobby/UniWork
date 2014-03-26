@@ -20,6 +20,6 @@ public class Question4Test {
         int value = 3;
         int expectedValue = 2;
 
-        assertEquals(expectedValue, Question4.removeValuesDivisibleByInteger(integers, value));
+        assertEquals(expectedValue, Question4.shouldRemoveValuesDivisibleByInteger(integers, value));
     }
 }

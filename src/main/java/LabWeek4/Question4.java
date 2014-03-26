@@ -12,10 +12,10 @@ public class Question4 {
             integers.add(i);
         }
 
-        System.out.println(removeValuesDivisibleByInteger(integers, value));
+        System.out.println(shouldRemoveValuesDivisibleByInteger(integers, value));
     }
 
-    public static int removeValuesDivisibleByInteger(ArrayList<Integer> arrayList, int value) {
+    public static int shouldRemoveValuesDivisibleByInteger(ArrayList<Integer> arrayList, int value) {
 
         ArrayList<Integer> valuesToRemove = new ArrayList<Integer>();
 

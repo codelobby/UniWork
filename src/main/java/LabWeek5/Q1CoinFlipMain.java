@@ -10,7 +10,6 @@ public class Q1CoinFlipMain {
 
         Scanner scanner = new Scanner(System.in);
 
-        //Asks user for input, It will display 1000 random coin flips if you want
         System.out.println("How many times would you like to flip the coin?");
         int flipCount = scanner.nextInt();
 

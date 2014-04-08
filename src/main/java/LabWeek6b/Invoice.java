@@ -1,4 +1,4 @@
-package Week5Code.src.interfacesPlus;// Fig. 10.12: Invoice.java
+package LabWeek6b;// Fig. 10.12: Invoice.java
 // Invoice class implements Payable.
 
 public class Invoice implements Payable { //INTERFACE PROMISE (see last method)
@@ -6,10 +6,12 @@ public class Invoice implements Payable { //INTERFACE PROMISE (see last method)
 	private String partDescription;
 	private int quantity;
 	private double pricePerItem;
+    private String invoiceID;
 
 	// four-argument constructor
-	public Invoice(String part, String description, int count, double price) {
-		partNumber = part;
+	public Invoice(String part, String description, int count, double price, String invID) {
+        invoiceID = invID;
+        partNumber = part;
 		partDescription = description;
 		setQuantity(count); // validate and store quantity
 		setPricePerItem(price); // validate and store price per item
@@ -51,6 +53,7 @@ public class Invoice implements Payable { //INTERFACE PROMISE (see last method)
 		return pricePerItem;
 	}
 
+
 	
 	// return String representation of Invoice object
 	public String toString() {
@@ -65,5 +68,10 @@ public class Invoice implements Payable { //INTERFACE PROMISE (see last method)
 	public double getPaymentAmount() {
 		return getQuantity() * getPricePerItem(); // calculate total cost
 	}
-	
+
+    @Override
+    public String getID() {
+        return invoiceID;
+    }
+
 }

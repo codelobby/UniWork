@@ -1,4 +1,4 @@
-package Week5Code.src.interfacesPlus;// Fig. 10.8: BasePlusCommissionEmployee.java
+package LabWeek6a;// Fig. 10.8: BasePlusCommissionEmployee.java
 // BasePlusCommissionEmployee class extends CommissionEmployee.
 
 public class BasePlusCommissionEmployee extends CommissionEmployee { //note extends CommissionEmployee which extends Employee
@@ -22,10 +22,11 @@ public class BasePlusCommissionEmployee extends CommissionEmployee { //note exte
 		return baseSalary;
 	}
 
-	// KEEP INHERITED INTERFACE PROMISE (NO OVERRIDE AS getPaymentAmount() STUB NOT IN EMPLOYEE)
-	// note call to super class's getPaymentAmount which is efficient since we can't access private inst vars in subclass
-	public double getPaymentAmount() {
-		return getBaseSalary() + super.getPaymentAmount();
+	// calculate earnings; override method earnings in CommissionEmployee
+	// note call to super class's earnings which is efficient since we can't access private inst vars in subclass
+	@Override
+	public double earnings() {
+		return getBaseSalary() + super.earnings();
 	}
 
 	

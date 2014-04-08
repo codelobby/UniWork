@@ -1,4 +1,4 @@
-package Week5Code.src.inheritancePlus;// Fig. 10.5: SalariedEmployee.java
+package LabWeek6a;// Fig. 10.5: SalariedEmployee.java
 // SalariedEmployee concrete class extends abstract class Employee.
 
 public class SalariedEmployee extends Employee {

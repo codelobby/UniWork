@@ -1,4 +1,4 @@
-package Week5Code.src.interfacesPlus;// Fig. 10.5: SalariedEmployee.java
+package LabWeek6b;// Fig. 10.5: SalariedEmployee.java
 // SalariedEmployee concrete class extends abstract class Employee.
 
 public class SalariedEmployee extends Employee {
@@ -28,7 +28,12 @@ public class SalariedEmployee extends Employee {
 		return getWeeklySalary();
 	}
 
-	// return String representation of SalariedEmployee object
+    @Override
+    public String getID() {
+        return null;
+    }
+
+    // return String representation of SalariedEmployee object
 	// note call to super class's toString which is efficient since we can't access private inst vars in subclass
 	@Override
 	public String toString() {

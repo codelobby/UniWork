@@ -1,4 +1,4 @@
-package Week5Code.src.inheritancePlus;// Fig. 10.6: HourlyEmployee.java
+package LabWeek6a;// Fig. 10.6: HourlyEmployee.java
 // HourlyEmployee class extends Employee.
 
 public class HourlyEmployee extends Employee {

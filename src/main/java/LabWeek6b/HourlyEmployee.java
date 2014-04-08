@@ -1,4 +1,4 @@
-package Week5Code.src.interfacesPlus;// Fig. 10.6: HourlyEmployee.java
+package LabWeek6b;// Fig. 10.6: HourlyEmployee.java
 // HourlyEmployee class extends Employee.
 
 public class HourlyEmployee extends Employee {
@@ -47,8 +47,13 @@ public class HourlyEmployee extends Employee {
 			return 40 * getWage() + (getHours() - 40) * getWage() * 1.5;
 	}
 
-	
-	// return String representation of HourlyEmployee object
+    @Override
+    public String getID() {
+        return null;
+    }
+
+
+    // return String representation of HourlyEmployee object
 	@Override
 	public String toString() {
 		return String.format("hourly employee: %s\n%s: $%,.2f; %s: %,.2f", super.toString(), "hourly wage", getWage(), "hours worked",

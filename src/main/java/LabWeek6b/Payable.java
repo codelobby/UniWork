@@ -1,4 +1,4 @@
-package Week5Code.src.interfacesPlus; // Fig. 10.11: Payable.java
+package LabWeek6b; // Fig. 10.11: Payable.java
  // Payable interface declaration.
 
  public interface Payable{
@@ -7,6 +7,8 @@ package Week5Code.src.interfacesPlus; // Fig. 10.11: Payable.java
 	 //could be employee earnings, could be invoice total could be something not developed yet 
 	 // i.e. polymorphically future proof
     double getPaymentAmount();
+
+    public String getID();
     
  } 
 

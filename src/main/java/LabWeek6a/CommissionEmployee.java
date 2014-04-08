@@ -1,4 +1,4 @@
-package Week5Code.src.interfacesPlus;// Fig. 10.7: CommissionEmployee.java
+package LabWeek6a;// Fig. 10.7: CommissionEmployee.java
 // CommissionEmployee class extends Employee.
 
 public class CommissionEmployee extends Employee {
@@ -37,8 +37,9 @@ public class CommissionEmployee extends Employee {
 		return grossSales;
 	}
 
-	// KEEP INHERITED INTERFACE PROMISE (NO OVERRIDE AS getPaymentAmount() STUB NOT IN EMPLOYEE)
-	public double getPaymentAmount() {
+	// calculate earnings; override abstract method earnings in Employee
+	@Override
+	public double earnings() {
 		return getCommissionRate() * getGrossSales();
 	}
 
